@@ -40,7 +40,7 @@ class Alumno{
     
     obsequio = () => {
         if(this.prommedio() >17){
-            alert('El alumno Recibe Obsequio');
+            alert('El alumno Recibe Obsequio Una Mochila');
         }else{
             alert('El alumno No REcibe Obsequio');
         }
