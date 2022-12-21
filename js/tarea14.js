@@ -5,7 +5,6 @@ function($scope) {
   
   // Función 
   $scope.CalcularSalarioTotal = function() {
-    if ($scope.codigoT && $scope.horasT && $scope.tarifaH) {
       // Sueldo básico
       $scope.sueldoBase = $scope.horasT * $scope.tarifaH;
       if ($scope.sueldoBase < 500) {
@@ -29,6 +28,6 @@ function($scope) {
 
       // Calculamos el salario neto
       $scope.salarioNeto = $scope.sueldoBase - $scope.descuento;
-    }
+    
   }
 });
