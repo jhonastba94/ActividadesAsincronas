@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "nuevo usuarios",
+    "age": 55,
+    "email": "nuevouser@email.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/63a5c09428b35cae8d3e00fb HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/users/63a5c0a228b35cae8d3e00fd HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/63a5c0c628b35cae8d3e0102 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Esteban Duarte",
+  "age": 33,
+  "email": "esteduarte@email.com"
+}
